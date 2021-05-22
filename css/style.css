@@ -14,6 +14,10 @@ body {
 header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+
+  position: absolute;
+
+  z-index: 1;
 }
 .header__content {
   width: 90%;
@@ -410,9 +414,9 @@ header {
 }
 .agents__bot a {
   text-decoration: none;
-  color: white
+  color: white;
 }
-.agents__bot h2{
+.agents__bot h2 {
   color: #00cdce;
   padding-top: 30px;
 }
@@ -421,37 +425,37 @@ header {
   font-size: 14px;
   /* margin-bottom: 15px; */
 }
-.agents__boticon i{
+.agents__boticon i {
   border: 2px solid white;
   margin: 10px;
   padding: 10px;
 }
 
 /* MAP  */
-.map{
+.map {
   width: 100%;
 }
-.map__location{
+.map__location {
   width: 100%;
   border: 2px solid #07a3a5;
   padding: 15px;
   background-color: rgba(128, 128, 128, 0.4);
 }
-.map__location iframe{
+.map__location iframe {
   width: 100%;
 }
 
 /* CONTACT  */
-.contact{
+.contact {
   width: 100%;
   background-color: white;
 }
-.contact__title{
+.contact__title {
   text-align: center;
   font-size: 30px;
   padding-top: 50px;
 }
-.contact__content{
+.contact__content {
   width: 90%;
   margin: auto;
 
@@ -461,27 +465,73 @@ header {
   text-align: left;
   padding: 50px;
 }
-.contact__left{
+.contact__left {
   width: 40%;
   padding: auto;
 }
-.contact__item{
+.contact__item {
   width: 50%;
   padding: 10px 0;
   margin: auto;
 }
-.contact__item input{
+.contact__item input {
   width: 100%;
   padding: 10px 5px;
   background-color: rgba(128, 128, 128, 0.1);
   border: none;
   border-bottom: 2px solid rgba(128, 128, 128, 0.6);
 }
-.contact__right{
+.contact__item a {
+  text-decoration: none;
+  color: white;
+}
+.contact__item button {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+  border: 1px solid black;
+}
+.contact__right {
   width: 40%;
   text-align: center;
 }
-.contact__right textarea{
+.contact__right textarea {
   width: 100%;
   padding: 10px 5px;
+  background-color: rgba(128, 128, 128, 0.1);
+  border: none;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.6);
+}
+
+/* FOOTER  */
+footer {
+  width: 100%;
+  background-color: #00cdce;
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer__left {
+  color: white;
+  padding: inherit;
+}
+.footer__left p {
+  padding: inherit;
+}
+.footer__left a {
+  text-decoration: none;
+  color: red;
+}
+.footer__right {
+  padding: inherit;
+}
+.footer__icon a {
+  text-decoration: none;
+  color: white;
+}
+.footer__icon i {
+  border: 2px solid white;
+  margin: 10px;
+  padding: 10px;
 }
